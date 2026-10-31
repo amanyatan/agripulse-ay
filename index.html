@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriPulse | Agricultural Knowledge & Harvest Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain-canvas-container">
+    <canvas id="grainCanvas"></canvas>
+  </div>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.4 19 2c1 2 2 4.12 2 7a7 7 0 0 1-7 7Zm-2 4v-4"/><path d="M7 20c-1.6 0-3-1.3-3-3 0-2 3-6 3-6s3 4 3 6c0 1.7-1.4 3-3 3Z"/></svg>
+        AgriPulse
+      </a>
+      <div class="nav-links">
+        <a href="#categories">Categories</a>
+        <a href="#insights">Insights</a>
+        <a href="#contact" class="btn btn-sm">Join Community</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-content">
+        <span class="badge">Empowering Farmers & Students</span>
+        <h1>Discover the Science & Future of Agriculture</h1>
+        <p>Explore high-yield cultivation techniques, comprehensive grain studies, and seasonal crop data tailored for agricultural researchers, modern farmers, and agrarian students.</p>
+        <div class="hero-btns">
+          <a href="#categories" class="btn btn-primary">Explore Categories</a>
+          <a href="#insights" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="section container">
+      <div class="section-title">
+        <h2>Agricultural Categories</h2>
+        <p>Curated guides and data across major crop ecosystems.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://picsum.photos/seed/paddy/800/600')"></div>
+          <div class="card-body">
+            <span class="tag">Grains & Cereals</span>
+            <h3>Rice & Paddy Cultivation</h3>
+            <p>From water management in lowland fields to high-yield hybrid seeds. Complete guide for optimal harvests.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://picsum.photos/seed/wheatfield/800/600')"></div>
+          <div class="card-body">
+            <span class="tag">Grains & Cereals</span>
+            <h3>Wheat & Small Grains</h3>
+            <p>Soil health, nitrogen cycling, and winter vs. spring wheat cultivars designed for agrarian research.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://picsum.photos/seed/orchard/800/600')"></div>
+          <div class="card-body">
+            <span class="tag">Orchards</span>
+            <h3>Fresh Fruits & Citrus</h3>
+            <p>Best practices for fruit arboriculture, pest management, and post-harvest storage solutions.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://picsum.photos/seed/vegetables/800/600')"></div>
+          <div class="card-body">
+            <span class="tag">Horticulture</span>
+            <h3>Organic Vegetables</h3>
+            <p>Sustainable greenhouse techniques, root crop dynamics, and soil nutrient balancing for leafy greens.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="insights" class="section section-alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why Modern Agronomy Matters</h2>
+          <p>Bridging traditional field wisdom with modern biological science.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">🌾</div>
+            <h3>Yield Optimization</h3>
+            <p>Data-driven insights to maximize metric output per hectare using smart crop rotation.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🎓</div>
+            <h3>Student Resources</h3>
+            <p>Academic summaries, plant pathology charts, and botanical classification toolkits.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🌱</div>
+            <h3>Sustainable Farming</h3>
+            <p>Eco-friendly pest deterrents and low-water irrigation protocols for resilient farming.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <div class="contact-box">
+        <div class="contact-text">
+          <h2>Stay Ahead in Agronomy</h2>
+          <p>Subscribe to our weekly research newsletter tailored for agronomy students and regional growers.</p>
+        </div>
+        <form id="subscribeForm" class="contact-form">
+          <input type="email" id="emailInput" placeholder="Enter your academic or farm email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <div id="thankYou" class="thank-you-msg" style="display:none;">
+          ✨ Thank you for subscribing! Check your inbox for our latest grain report.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 AgriPulse Hub. Dedicated to agricultural advancement.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
